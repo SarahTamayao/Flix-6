@@ -27,26 +27,26 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="now_playing_tabbar_item" translatesAutoresizingMaskIntoConstraints="NO" id="WpL-7Z-Q64" userLabel="Poster">
-                                                    <rect key="frame" x="15" y="11" width="112" height="128"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="128" id="fiX-mE-b9K"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwe-Jn-z8T" userLabel="Title">
-                                                    <rect key="frame" x="143" y="25" width="213" height="21"/>
+                                                    <rect key="frame" x="145" y="25" width="213" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Synopsis" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="QES-4h-Ikc">
-                                                    <rect key="frame" x="135" y="54" width="232" height="177"/>
+                                                    <rect key="frame" x="135" y="66" width="232" height="148"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="now_playing_tabbar_item" translatesAutoresizingMaskIntoConstraints="NO" id="WpL-7Z-Q64" userLabel="Poster">
+                                                    <rect key="frame" x="15" y="37" width="112" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="128" id="fiX-mE-b9K"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
