@@ -77,5 +77,21 @@ class MovieGridViewController: UIViewController, UICollectionViewDelegate, UICol
     cell.posterView.af.setImage(withURL: posterUrl!);
     return cell;
   }
-
+  
+  //navigate to detail screen when a movie is selected
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    let movie = movies[indexPath.row];
+    print("Selected", movie["title"]);
+  }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    let cell = sender as! UICollectionViewCell;
+    let indexPath = collectionView.indexPath(for: cell)!;
+    //data to pass to detailsViewcontroller
+    let movie = movies[indexPath.row];
+    
+    let detailsViewController = segue.destination as! MovieDetailsViewController;
+    detailsViewController.movie = movie;
+    
+  }
 }
