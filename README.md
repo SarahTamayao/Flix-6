@@ -15,9 +15,8 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [X] (2pts) In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer.
 
 ### App Walkthrough GIF
-`TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `YOUR_GIF_URL_HERE`. Make sure the gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after after adding gif)
-
-<img src="YOUR_GIF_URL_HERE" width=250><br>
+## Iphone 8
+![](Flix_iPhone8_Portrait2.gif)
 
 ### Notes
 Describe any challenges encountered while building the app.
@@ -71,7 +70,7 @@ Attempt:
 
 	v	Tried with button element
 
--->somehow, ctrl drag only works with button now. BUG IN XCODE???	
+-->somehow, ctrl drag only works with button now. BUG IN XCODE???
 Solution:
 	1. Create segue from MovieDetailsViewController to VideoViewController
 	2. Add UITapGestureRecognizer to posterView in MovieDetailsViewController
