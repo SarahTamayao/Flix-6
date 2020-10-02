@@ -210,7 +210,7 @@
                         <outlet property="posterView" destination="iRp-1x-yEt" id="GiZ-ut-1Di"/>
                         <outlet property="synopsisLabel" destination="vtM-mS-SiX" id="CLk-vK-WHA"/>
                         <outlet property="titleLabel" destination="aTQ-Cd-Ybv" id="Lga-vx-1gB"/>
-                        <segue destination="lY7-KZ-nPH" kind="presentation" identifier="videoSegue" id="hqu-fC-c51"/>
+                        <segue destination="lY7-KZ-nPH" kind="presentation" identifier="videoSegue" modalTransitionStyle="flipHorizontal" id="hqu-fC-c51"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LRG-qr-uwL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -225,18 +225,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9sb-f9-ikm">
-                                <rect key="frame" x="0.0" y="88" width="414" height="376"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9sb-f9-ikm">
+                                <rect key="frame" x="0.0" y="35" width="414" height="681"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9e-6K-3Ih">
+                                <rect key="frame" x="187.66666666666666" y="5" width="39" height="30"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="touchCloseBtn:" destination="lY7-KZ-nPH" eventType="touchUpInside" id="Iqp-id-bII"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QQs-fc-vra"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9sb-f9-ikm" firstAttribute="trailing" secondItem="QQs-fc-vra" secondAttribute="trailing" id="NQo-3A-EmA"/>
+                            <constraint firstItem="9sb-f9-ikm" firstAttribute="bottom" secondItem="QQs-fc-vra" secondAttribute="bottom" id="QJq-by-R5o"/>
+                            <constraint firstItem="l9e-6K-3Ih" firstAttribute="top" secondItem="QQs-fc-vra" secondAttribute="top" constant="5" id="f0f-Bc-5oR"/>
+                            <constraint firstItem="9sb-f9-ikm" firstAttribute="top" secondItem="l9e-6K-3Ih" secondAttribute="top" constant="30" id="kJJ-PI-QE8"/>
+                            <constraint firstItem="l9e-6K-3Ih" firstAttribute="centerX" secondItem="UmA-kX-YTO" secondAttribute="centerX" id="mm1-VP-7Yd"/>
+                            <constraint firstItem="9sb-f9-ikm" firstAttribute="leading" secondItem="QQs-fc-vra" secondAttribute="leading" id="zFr-Ne-HbI"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jhS-9A-OFH"/>
                     <connections>
