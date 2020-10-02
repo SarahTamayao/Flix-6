@@ -79,10 +79,6 @@ class MovieGridViewController: UIViewController, UICollectionViewDelegate, UICol
   }
   
   //navigate to detail screen when a movie is selected
-  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    let movie = movies[indexPath.row];
-    print("Selected", movie["title"]);
-  }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     let cell = sender as! UICollectionViewCell;
