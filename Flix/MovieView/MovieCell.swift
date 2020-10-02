@@ -17,10 +17,12 @@ class MovieCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     
-    self.layer.borderWidth = 1.0;
-    //set color
-    let color = CGColor(red: 12.0/255.0, green: 31.0/255.0, blue: 199.0/255.0, alpha: CGFloat(0.5));
-    self.layer.borderColor = color;
+        self.layer.borderWidth = 1.0;
+        //set color
+        let color = CGColor(red: 12.0/255.0, green: 31.0/255.0, blue: 199.0/255.0, alpha: CGFloat(0.5));
+        self.layer.borderColor = color;
+        
+ 
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

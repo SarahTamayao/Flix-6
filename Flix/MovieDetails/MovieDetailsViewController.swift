@@ -42,6 +42,10 @@ class MovieDetailsViewController: UIViewController {
       let oneTap = UITapGestureRecognizer(target: self, action: #selector(tapDetected));
       posterView.isUserInteractionEnabled = true;
       posterView.addGestureRecognizer(oneTap);
+      
+      //custom poster border
+      posterView.layer.borderWidth = 1.0;
+      posterView.layer.borderColor = UIColor.white.cgColor;
     }
     
 
