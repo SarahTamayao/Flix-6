@@ -2,44 +2,6 @@
 
 Flix is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-## Flix Part 2
-
-### User Stories
-
-#### REQUIRED (10pts)
-- [X] (5pts) User can tap a cell to see more details about a particular movie.
-- [X] (5pts) User can tap a tab bar button to view a grid layout of Movie Posters using a CollectionView.
-
-#### BONUS
-- [x] (2pts) User can tap a poster in the collection view to see a detail screen of that movie.
-- [X] (2pts) In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer.
-
-### App Walkthrough GIF
-## Iphone 8
-![](Flix_iPhone8_Portrait2.gif)
-
-### Notes
-Describe any challenges encountered while building the app.
-
-1. CTRL drag does not show segue
-Problem: I was attempting to create show movie trailer whenever user click on the poster. I
-held "ctrl" on the posterImage and drag it to the VideoViewController but there was nothing
-popup to setup the segue.  
-Attempt:
-	x	Tried again  
-	x	Tried with different elements  
-	x 	Restart xcode  
-	x 	Create new project and new viewcontrollers  
-	x 	Check mark on attribute User Interaction Enable  
-
-	v 	Tried with button element  
-
--->somehow, ctrl drag only works with button now. BUG IN XCODE???  
-Solution:  
-	1. Create segue from MovieDetailsViewController to VideoViewController  
-	2. Add UITapGestureRecognizer to posterView in MovieDetailsViewController  
-	3. Call performSegue when user click on the posterView  
-
 ## Flix Part 1
 
 ### User Stories
